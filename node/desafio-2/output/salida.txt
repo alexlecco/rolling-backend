@@ -1,0 +1,7 @@
+operaciones
+    suma: 12, resta: 8, multiplicación: 20, división: 5
+
+computadora de: alex
+    [{"model":"Intel(R) Core(TM) i3-4005U CPU @ 1.70GHz","speed":1597,"times":{"user":15575600,"nice":15500,"sys":7227100,"idle":31048100,"irq":0}},{"model":"Intel(R) Core(TM) i3-4005U CPU @ 1.70GHz","speed":1597,"times":{"user":15462600,"nice":3600,"sys":7359700,"idle":30967100,"irq":0}},{"model":"Intel(R) Core(TM) i3-4005U CPU @ 1.70GHz","speed":1597,"times":{"user":15522000,"nice":7100,"sys":7401800,"idle":30524100,"irq":0}},{"model":"Intel(R) Core(TM) i3-4005U CPU @ 1.70GHz","speed":1597,"times":{"user":15090600,"nice":9100,"sys":7100500,"idle":31133900,"irq":0}}]
+
+Hora del reporte: April 27th 2020, 9:28:12 pm

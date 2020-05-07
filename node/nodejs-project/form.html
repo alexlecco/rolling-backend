@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <input type="text" id="username" placeholder="Usuario" />
+        </div>
+        <div>
+            <input type="password" id="password" placeholder="Clave" />
+        </div>
+        <div>
+            <button type="button" id="send">Ingresar</button>
+        </div>
+        <hr />
+        <h2>Users</h2>
+        <button type="button" id="get-users">Get Users</button>
+    </form>
+    <script>
+    const userInput = document.getElementById('username');
+    const pswdInput = document.getElementById('password');
+    document.getElementById('send').addEventListener('click', event => {
+        window.fetch('http://localhost:3001/api/auth', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: userInput.value,
+                password: pswdInput.value,
+            })
+        });
+    });
+
+    document.getElementById('get-users').addEventListener('click', () => {
+        window.fetch('http://localhost:3001/api/users', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'access-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaG9sYSI6Ik11bmRvIiwiaWF0IjoxNTgyNDI0NzU5LCJleHAiOjE1ODI0MjU3NTl9.2B4jgIrO0nTWMpmctRrFvsGzOhQtecR0O9Vum2xNdII_'
+            }
+        })
+            .then(response => {
+                response.json()
+                    .then(users => {
+                        console.log('Users', users);
+                    })
+            });
+    });
+    </script>
+</body>
+</html>

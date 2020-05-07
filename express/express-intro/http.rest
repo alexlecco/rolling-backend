@@ -1,0 +1,15 @@
+GET http://localhost:3000/products
+
+###
+
+GET http://localhost:3000/products/3?alex=5
+
+###
+
+POST http://localhost:3000/add
+Content-Type: application/json
+
+{
+    "tile": "test",
+    "id": 4
+}
