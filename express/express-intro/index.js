@@ -2,7 +2,7 @@ const Express = require('express');
 const Products = require('./products');
 
 const app = Express();
-const port = 3000;
+const port = 3001;
 app.use(Express.json());
 app.use(Express.urlencoded({ extended: true }))
 

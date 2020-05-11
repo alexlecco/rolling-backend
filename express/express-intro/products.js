@@ -1,16 +1,23 @@
 const products = [
     {
-        "id": 1,
-        "name": "Borrador"
+      id: 'prod01',
+      name: 'notebook',
+      brand: 'Asus',
+      price: 19000
     },
     {
-        "id": 2,
-        "name": "Marcador"
+      id: 'prod02',
+
+      name: 'zapatillas',
+      brand: 'Nike',
+      price: 3500
     },
     {
-        "id": 3,
-        "name": "Pizzarra"
-    },
-]
+      id: 'prod03',
+      name: 'juego de ps4',
+      brand: 'Dark Souls',
+      price: 5000
+    }
+  ]
 
 module.exports = products;
