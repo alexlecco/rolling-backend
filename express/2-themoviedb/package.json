@@ -14,7 +14,7 @@
     "@babel/core": "^7.9.6",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.6",
-    "async": "^3.2.0",
+    "async": "^3.2.2",
     "express": "^4.17.1",
     "nodemon": "^2.0.3",
     "request": "^2.88.2"
